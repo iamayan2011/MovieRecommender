@@ -1,54 +1,78 @@
-# React + TypeScript + Vite
+# Movie Recommender System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Movie Recommender System is a web app built using Vite (React, TypeScript, Tailwind CSS, DaisyUI) on the frontend and FastAPI on the backend. It suggests movies based on your selection using a cosine similarity based model.
 
-Currently, two official plugins are available:
+![Home Screen Screenshot](./images/home.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The app has following features:
 
-## Expanding the ESLint configuration
+* Search for movies by title (powered by TMDB API)
+* Select movies and fetch personalized recommendations from FastAPI endpoint
+* Responsive layout with carousels (SwiperJS) and rounded UI components
+* More features: coming soon...
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Tech Stack
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+**Client:**
+* React
+* TypeScript
+* Vite
+* Tailwind CSS
+* DaisyUI
+* SwiperJS
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+**Server:**
+* Python
+* FastAPI
+* Uvicorn
+* Scikit‑learn / Pandas
+* More details in: https://github.com/iamayan2011/movie-recommender-fastAPI
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+**Data Storage:**
+* Static pickle and CSV files (no external database required)
+
+## Usage
+
+The app can be run locally by following these steps:
+
+* Front End:
+    ```bash
+    npm install
+    npm run dev
+    ```
+* Backend:
+    * View the backend repo : https://github.com/iamayan2011/movie-recommender-fastAPI
+
+## Contributing
+
+If you want to contribute to this project, please follow these steps:
+
+* Fork this repository.
+* Create a new branch (git checkout -b feature/your-feature-name).
+* Make changes and commit them (git commit -m "Add your commit message").
+* Push your changes to your forked repository (git push origin feature/your-feature-name).
+* Open a pull request.
+
+## Screenshots
+
+Screenshots can be viewed in the [images](./images) folder
+
+* Home Page  
+  ![Home Screen](./images/home.png)
+
+* Search & Selection  
+  ![Search Screen](./images/search.png)
+
+* Selected Movies Container  
+  ![Selected Movies](./images/selected.png)
+
+* Recommendations Container  
+  ![Recommendations](./images/recommendations.png)
+
+## About Me
+
+I am a fourth‑year undergraduate (Batch 2021–2025) at the Indian Institute of Information Technology, Sri City. I’m a passionate full‑stack developer focusing on React, TypeScript, and AI/ML integrations.
+
+[Ayan Raza – LinkedIn](https://www.linkedin.com/in/iamayan2011/)  
+[Ayan Raza – GitHub](https://github.com/iamayan2011)

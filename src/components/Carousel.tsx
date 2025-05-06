@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import type { Swiper as SwiperInstance } from "swiper";
 import { FreeMode, Navigation, Thumbs } from "swiper/modules";
-import AnchorLink from "react-anchor-link-smooth-scroll";
+
 
 
 // @ts-expect-error: missing declarations for swiper css
@@ -82,11 +82,11 @@ export default function Carousel() {
             <div className="absolute top-1/3 left-10 z-20 max-w-xl space-y-4 text-left mx-10">
               <h2 className="text-4xl font-bold">Movie Recommender System</h2>
               <p className="text-sm text-gray-300">A movie recommender system which suggests you movies based on your selection.</p>
-              <AnchorLink href ="#recommender" 
+              <a href ="#recommender" 
                 className="inline-block px-5 py-2 bg-white hover:bg-gray-400 !text-black rounded-md text-sm"
               >
                 Try Now
-              </AnchorLink>
+              </a>
             </div>
           </div>
         </SwiperSlide>

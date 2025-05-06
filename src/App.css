@@ -1,0 +1,26 @@
+#root {
+  max-width: 100%;
+}
+
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+body {
+  margin: 0;
+  background-color: #000319;
+  font-family: Arial, sans-serif;
+}
+
+
+@layer utilities {
+  .card-title {
+    @apply text-center ;
+  }
+}

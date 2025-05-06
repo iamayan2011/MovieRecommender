@@ -26,7 +26,7 @@ export default function Home() {
     setLoadingRecs(true);
 
     try {
-      const response = await fetch("http://localhost:8000/recommend_by_id", {
+      const response = await fetch("https://movie-recommend-fastapi.onrender.com/recommend_by_id", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

@@ -2,7 +2,7 @@
 
 Movie Recommender System is a web app built using Vite (React, TypeScript, Tailwind CSS, DaisyUI) on the frontend and FastAPI on the backend. It suggests movies based on your selection using a cosine similarity based model.
 
-![Home Screen Screenshot](./images/home.png)
+![Home Screen Screenshot](https://github.com/iamayan2011/MovieRecommender/blob/main/screenshots/sshero.png)
 
 The app has following features:
 
@@ -56,19 +56,10 @@ If you want to contribute to this project, please follow these steps:
 
 ## Screenshots
 
-Screenshots can be viewed in the [images](./images) folder
+Screenshots can be viewed in the `screenshots` folder
 
 * Home Page  
-  ![Home Screen](./images/home.png)
-
-* Search & Selection  
-  ![Search Screen](./images/search.png)
-
-* Selected Movies Container  
-  ![Selected Movies](./images/selected.png)
-
-* Recommendations Container  
-  ![Recommendations](./images/recommendations.png)
+  ![Full Page](https://github.com/iamayan2011/MovieRecommender/blob/main/screenshots/ssfull.png)
 
 ## About Me
 
